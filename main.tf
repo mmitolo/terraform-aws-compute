@@ -1,7 +1,7 @@
 resource "random_pet" "server_name" {
   keepers = {
     # Generate a new pet name each time we switch to a new AMI id
-    ami_id = data.aws_ami.ubuntu
+    ami_id = data.aws_ami.ubuntu.id
   }
 }
 
