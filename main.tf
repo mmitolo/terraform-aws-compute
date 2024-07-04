@@ -65,6 +65,7 @@ module "ec2" {
   name = random_pet.server_name.id
 
   ami                         = data.aws_ami.ubuntu.id
+  subnet_id                   = aws_subnet.my_subnet.id
   instance_type               = "t2.micro"
   monitoring                  = true
   associate_public_ip_address = true

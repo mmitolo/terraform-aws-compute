@@ -4,3 +4,7 @@ variable "vpc_name" {
 variable "subnet_name" {
   type = string
 }
+
+variable "aws_region" {
+  type = string
+}
